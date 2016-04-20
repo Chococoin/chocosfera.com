@@ -27,7 +27,33 @@
 		}
 		$(document).ready(function(){
 			variables()
-   			$("#inicio").click(function(){
+		/*if( inicio === "54px"  && que === "54px"  && historia === "54px"  && fabrica === "54px"  && banco === "54px" && soporte === "54px"){
+			$('#inicio').hover( 
+				function(){ $(this).css('background-color','#E2A10E').css('height','58px'); }, 
+				function(){ $(this).css('background-color','#F2B11E').css('height','54px'); }
+			);
+			$('#que').hover( 
+				function(){ $(this).css('background-color','#EB575A').css('height','58px'); }, 
+				function(){ $(this).css('background-color','#FB676A').css('height','54px'); }
+			);
+			$('#historia').hover( 
+				function(){ $(this).css('background-color','#1F003B').css('height','58px'); }, 
+				function(){ $(this).css('background-color','#2F004B').css('height','54px'); }
+			);
+			$('#fabrica').hover( 
+				function(){ $(this).css('background-color','#EDE10B').css('height','58px'); }, 
+				function(){ $(this).css('background-color','#FDF31B').css('height','54px'); }
+			);
+			$('#banco').hover( 
+				function(){ $(this).css('background-color','#EA0643').css('height','58px'); }, 
+				function(){ $(this).css('background-color','#FA1653').css('height','54px'); }
+			);
+			$('#soporte').hover( 
+				function(){ $(this).css('background-color','#0062AB').css('height','58px'); }, 
+				function(){ $(this).css('background-color','#0072BB').css('height','54px'); }
+			);
+		}*/
+			$("#inicio").click(function(){
    				if(inicio === "54px" && que === "54px"){
 	   				$('#que>p').hide();
 	   				$('#que').animate({ height: '10'}, timeUp, 'swing');
@@ -40,6 +66,11 @@
 	   				$('#soporte>p').hide();
 	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
 	   				variables()
+   				}
+   				if(inicio === "10px"){
+   					$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				setTimeout(retardo, timeDown*4)
    				}
    				if(inicio === "54px" && que === "10px"){
 	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
