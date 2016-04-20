@@ -3,7 +3,6 @@
     // Visit http://wbond.net/sublime_packages/sftp/settings for help
     
     // sftp, ftp or ftps
-    "type": "ftp",
 
     "save_before_upload": true,
     "upload_on_save": true,
@@ -13,14 +12,8 @@
     "confirm_downloads": false,
     "confirm_sync": true,
     "confirm_overwrite_newer": false,
-    
-    "host": "217.199.187.250",
-    "user": "chocosfera.com",
-    "password": "Tj36Y/f4/",
-    //"port": "22",
-    
-    "remote_path": "/public_html/start/",
-    "ignore_regexes": [
+
+     "ignore_regexes": [
         "\\.sublime-(project|workspace)", "sftp-config(-alt\\d?)?\\.json",
         "sftp-settings\\.json", "/venv/", "\\.svn/", "\\.hg/", "\\.git/",
         "\\.bzr", "_darcs", "CVS", "\\.DS_Store", "Thumbs\\.db", "desktop\\.ini"
