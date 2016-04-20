@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Chocosfera</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var inicio = $('#inicio').css('height');
+	   		var que = $('#que').css('height');
+	   		var historia = $('#historia').css('height');
+	   		var fabrica = $('#fabrica').css('height');
+	   		var banco = $('#banco').css('height');
+	   		var soporte = $('#soporte').css('height');
+   			$("#inicio").click(function(){
+   				if(inicio === "54px" && que === "54px"){
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10'}, 850, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, 850, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, 850, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, 850, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, 850, 'swing');
+	   				inicio = $('#inicio').css('height');
+	   				que = $('#que').css('height');
+	   				historia = $('#historia').css('height');
+	   				fabrica = $('#fabrica').css('height');
+	   				banco = $('#banco').css('height');
+	   				soporte = $('#soporte').css('height');
+   				}
+   				if(inicio === "54px" && que === "10px"){
+	   				$('#que').animate({ height: '54px'}, 100, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, 100, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, 100, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, 100, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, 100, 'swing');
+	   				$('#soporte>p').show();
+	   				inicio = $('#inicio').css('height');
+	   				que = $('#que').css('height');
+	   				historia = $('#historia').css('height');
+	   				fabrica = $('#fabrica').css('height');
+	   				banco = $('#banco').css('height');
+	   				soporte = $('#soporte').css('height');
+   				}
+
+   			});
+		});
+		$(document).ready(function(){
+   			$("#que").click(function(){
+   				$('#inicio>p').hide();
+   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#historia>p').hide();
+   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#fabrica>p').hide();
+   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#banco>p').hide();
+   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#soporte>p').hide();
+   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   			});
+		});
+		$(document).ready(function(){
+   			$("#historia").click(function(){
+   				$('#inicio>p').hide();
+   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#que>p').hide();
+   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#fabrica>p').hide();
+   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#banco>p').hide();
+   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#soporte>p').hide();
+   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   			});
+		});
+		$(document).ready(function(){
+   			$("#fabrica").click(function(){
+   				$('#inicio>p').hide();
+   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#que>p').hide();
+   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#historia>p').hide();
+   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#banco>p').hide();
+   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#soporte>p').hide();
+   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   			});
+		});
+		$(document).ready(function(){
+   			$("#banco").click(function(){
+   				$('#inicio>p').hide();
+   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#que>p').hide();
+   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#historia>p').hide();
+   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#fabrica>p').hide();
+   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#soporte>p').hide();
+   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   			});
+		});
+		$(document).ready(function(){
+   			$("#soporte").click(function(){
+   				$('#inicio>p').hide();
+   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#que>p').hide();
+   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#historia>p').hide();
+   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#fabrica>p').hide();
+   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				$('#banco>p').hide();
+   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div id="logo"></div>
+		<div id="inicio"><p>inicio</p></div>
+		<div id="que"><p>¿Qué es la chocosfera?</p></div>
+		<div id="historia"><p>Historia</p></div>
+		<div id="fabrica"><p>Choco Fábrica</p></div>
+		<div id="banco"><p>Banco</p></div>
+		<div id="soporte"><p>Soporte</p></div>
+	</div>	
+</body>
+</html>
