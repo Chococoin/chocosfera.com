@@ -2,7 +2,7 @@ body{
 	background: #260B12;
 }
 
-.container{ 
+#container{ 
   background-color: rgba(38,11,18,0.5); 
   height:     100%; 
   left:       0; 
@@ -12,11 +12,15 @@ body{
   z-index:    10;
 }
 
+#sub-container{
+	bottom: 0;
+}
+
 #logo{
 	background-image: url("../img/logoc.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 300px auto;
+	background-size: 350px auto;
 	height: 300px;
 	margin-top: 0;
 	margin: 0 auto;
@@ -35,7 +39,6 @@ body{
 	line-height: 54px;
 	margin: 0 auto;
 	position: static;
-	position: static;
 	text-align: center;
 	text-transform: uppercase;
 	-webkit-touch-callout: none;
@@ -44,6 +47,57 @@ body{
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+#content-inicio{
+
+}
+
+#usuario{
+	/*background-color: #FFC12E;*/
+	background-color: #FFF465;
+	color: #2A2E84;
+	cursor: default;
+	display: inline-block;
+	height: 90px;
+	width: 50%;
+	line-height: 90px;
+	font-family: 'Raleway', arial, sans-serif;
+	font-size: 45px;
+	position: static;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#registro{
+	/*background-color: #F6E81E;*/
+	background-color: #FFDA4D;
+	color: #2A2E84;	
+	cursor: default;
+	display: inline-block;
+	height: 90px;
+	width: 50%;
+	line-height: 90px;
+	font-family: 'Raleway', arial, sans-serif;
+	font-size: 45px;
+	position: static;
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	vertical-align: top;
 }
 
 #que{
