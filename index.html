@@ -1,220 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Chocosfera</title>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script>
-		function variables(){
-			inicio = $('#inicio').css('height');
-			que = $('#que').css('height');
-			historia = $('#historia').css('height');
-			fabrica = $('#fabrica').css('height');
-			banco = $('#banco').css('height');
-			soporte = $('#soporte').css('height');
-			timeUp = 850;
-			timeDown = 300;
-		}
-/*		function slowAlert() {
-  			alert("That was really slow!");
-		}*/
-		var retardo = function(){
-			//alert(";)")
-			location.reload(false);
-		}
-		$(document).ready(function(){
-			variables()
-   			$("#inicio").click(function(){
-   				if(inicio === "54px" && que === "54px"){
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(inicio === "54px" && que === "10px"){
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#que").click(function(){
-   				if(que === "54px" && historia === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(que === "54px" && historia === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#historia").click(function(){
-   				if(historia === "54px" && fabrica === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(historia === "54px" && fabrica === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#fabrica").click(function(){
-   				if(fabrica === "54px" && banco === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(fabrica === "54px" && banco === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#banco").click(function(){
-   				if(banco === "54px" && soporte === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(banco === "54px" && soporte === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#soporte").click(function(){
-   				if(soporte === "54px" && banco === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Chocosfera</title>
 
-	   				variables()
-   				}
-   				if(soporte === "54px" && banco === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-		});
-	</script>
-</head>
-<body>
-	<div class="container">
-		<div id="logo"></div>
-		<div id="inicio"><p>inicio</p></div>
-		<div id="que"><p>¿Qué es la chocosfera?</p></div>
-		<div id="historia"><p>Historia</p></div>
-		<div id="fabrica"><p>Choco Fábrica</p></div>
-		<div id="banco"><p>Banco</p></div>
-		<div id="soporte"><p>Soporte</p></div>
-	</div>	
-</body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hola Chocosfera</h1>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
 </html>
