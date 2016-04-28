@@ -8,7 +8,7 @@
 		<title>Chocosfera</title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="./styles/style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -19,31 +19,31 @@
 	<body>
 		<div class="container-flags">
 			<div style="display: block;" id="idiomas">
-				<a id="us" class="idioma" href="./en/index_en.html"><img src="./img/usa.png"></a>
-				<a id="fr" class="idioma" href="./fr/index_fr.html"><img src="./img/france.png"></a>
-				<a id="it" class="idioma" href="./it/index_it.html"><img src="./img/italy.png"></a>
+				<a id="ven" class="idioma" href="../index.html"><img src="../img/spain.png"></a>
+				<a id="fr" class="idioma" href="../fr/index_fr.html"><img src="../img/france.png"></a>
+				<a id="en" class="idioma" href="../it/index_en.html"><img src="../img/usa.png"></a>
 			</div>
 		</div>
 		<div class="container-fluid wrapper">
 			<div class="container logo-centered">
-				<img class="logo" src="./img/logoc.png">
+				<img class="logo" src="../img/logoc.png">
 			</div>
 			<div class="panel-group spoiler-container" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default spoiler-index">
 					<div class="panel-heading" role="tab" id="headingOne">
 						<h4 class="panel-title text-center">
 						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseIndex" aria-expanded="false" aria-controls="collapseIndex">
-							INICIO
+							HOME
 						</a>
 						</h4>
 					</div>
 					<div id="collapseIndex" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 						<div class="panel-body text-center">
 							<div class="col-xs-6 spoiler-index-user">
-								<p>USUARIO</p>
+								<p>UTENTE</p>
 							</div>
 							<div class="col-xs-6 spoiler-index-register">
-								<p>REGISTRO</p>
+								<p>REGISTRAZIONE</p>
 							</div>
 						</div>
 					</div>
@@ -66,7 +66,7 @@
 					<div class="panel-heading" role="tab" id="headingThree">
 						<h4 class="panel-title text-center">
 						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFactory" aria-expanded="false" aria-controls="collapseFactory">
-							CHOCO FÁBRICA
+							CHOCO FACTORY
 						</a>
 						</h4>
 					</div>
@@ -80,7 +80,7 @@
 					<div class="panel-heading" role="tab" id="headingThree">
 						<h4 class="panel-title text-center">
 						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseBank" aria-expanded="false" aria-controls="collapseBank">
-							CHOCO BANCO
+							CHOCO BANK
 						</a>
 						</h4>
 					</div>
@@ -94,7 +94,7 @@
 					<div class="panel-heading" role="tab" id="headingThree">
 						<h4 class="panel-title text-center">
 						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSupport" aria-expanded="false" aria-controls="collapseSupport">
-							SOPORTE
+							SUPPORTO
 						</a>
 						</h4>
 					</div>
@@ -111,12 +111,9 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".idiomaboton").click(function(){
-				  $('#idiomas').toggle(300);		
-				});	
-			});
-			
+			$(".idiomaboton").click(function(){
+			  $('#idiomas').toggle(300);		
+			});	
 		</script>
 	</body>
 </html>
