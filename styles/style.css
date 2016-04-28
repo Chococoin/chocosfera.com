@@ -100,45 +100,48 @@ body {
     transform: translateY(-50%);
 }
 
-
 /* idiomas  *************************************/
 
-#idiomas{
-	position: relative;
-	left: 0;
-	right: 100px;
+#idiomas {
+    position: relative;
+    right: 100px;
+    left: 0;
 }
-.idioma { 
-	display:inline-block;
-	margin:0 5px;
+.idioma {
+    display: inline-block;
+    margin: 0 5px;
 }
 .idioma img {
-	height:17px; 
-	display:inline-block;
-	vertical-align:middle;
-	margin:-1px 0 0 0;
+    display: inline-block;
+    height: 17px;
+    margin: -1px 0 0 0;
+
+    vertical-align: middle;
 }
 #barra  #idiomas {
-	position:absolute;
-	top:58px;
-	right:9px;
-	background:#151515;
-	padding:10px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-khtml-border-radius:3px;
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	display:none;
+    position: absolute;
+    top: 58px;
+    right: 9px;
+
+    display: none;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: #151515;
+
+     -khtml-border-radius: 3px;
 }
-#idiomas .idioma { 
-	position:relative;
-	z-index:2;
+#idiomas .idioma {
+    position: relative;
+    z-index: 2;
 }
-#idiomas .idioma img:hover{ 
-	border:solid 1px #fff;
+#idiomas .idioma img:hover {
+    border: solid 1px #fff;
 }
 /*cerro idiomas **********************************/
