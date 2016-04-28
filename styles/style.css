@@ -1,95 +1,113 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-body{
-	background: #260B12;
-	color: #000;
-	font-family: 'Montserrat', sans-serif;
+body {
+    font-family: "Montserrat", sans-serif;
+
+    color: #000;
+    background: #260b12;
 }
 .logo-centered {
-	padding: 40px;
+    padding: 40px;
 }
-.logo{
-	height: 300px;
-	width: 300px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+.logo {
+    position: relative;
+    left: 50%;
+
+    width: 300px;
+    height: 300px;
+
+    transform: translateX(-50%);
 }
 .wrapper {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
 }
-.spoiler-container{
-	margin-bottom: 0px;
+.spoiler-container {
+    margin-bottom: 0;
 }
 .spoiler-container .panel {
-    border-radius: 0px;
-    border: 0px solid transparent;
+    border: 0 solid transparent;
+    border-radius: 0;
     -webkit-box-shadow: 0 0 0 rgba(0,0,0,.05);
-    box-shadow: 0 0 0 rgba(0,0,0,.05);
+            box-shadow: 0 0 0 rgba(0,0,0,.05);
 }
 .spoiler-container .panel-default {
-    border: 0px solid transparent;
     margin-bottom: -5px;
+
+    border: 0 solid transparent;
 }
 .spoiler-container .panel-heading {
-    border-radius: 0px;
     height: 50px;
-    padding: 15px 0px;
+    padding: 15px 0;
+
+    border-radius: 0;
 }
 .spoiler-container .panel-body {
-    padding: 0px;
-    border: 0px solid transparent;
+    padding: 0;
+
+    border: 0 solid transparent;
     border-top-color: transparent;
 }
-.panel-default>.panel-heading+.panel-collapse>.panel-body {
-    border: 0px solid transparent;
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border: 0 solid transparent;
 }
 .spoiler-index .panel-heading {
-    background-color: #F2B11E;
-    color: #181A4B;
+    color: #181a4b;
+    background-color: #f2b11e;
 }
 .spoiler-history .panel-heading {
-    background-color: #2F004B;
-    color: #F4B127;
+    color: #f4b127;
+    background-color: #2f004b;
 }
 .spoiler-chocofactory .panel-heading {
-    background-color: #F4D35F;
-    color: #3E004B;
+    color: #3e004b;
+    background-color: #f4d35f;
 }
 .spoiler-bank .panel-heading {
-    background-color: #FA1653;
-    color: #3E004B;
+    color: #3e004b;
+    background-color: #fa1653;
 }
 .spoiler-support .panel-heading {
-    background-color: #0072BB;
-    color: #BE6580;
+    color: #be6580;
+    background-color: #0072bb;
 }
 .spoiler-index-user {
-	background-color: #F5DF89;
+    background-color: #f5df89;
 }
 .spoiler-index-user {
-    background-color: #F5DF89;
     height: 100px;
+
+    background-color: #f5df89;
 }
 .spoiler-index-register {
-    background-color: #F3D45F;
     height: 100px;
+
+    background-color: #f3d45f;
 }
 .spoiler-index-user p {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+
     font-size: 2em;
+
+    transform: translateY(-50%);
 }
 .spoiler-index-register p {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+
     font-size: 2em;
+
+    transform: translateY(-50%);
 }
+
 
 /* idiomas  *************************************/
 
+#idiomas{
+	position: relative;
+	left: 0;
+	right: 100px;
+}
 .idioma { 
 	display:inline-block;
 	margin:0 5px;

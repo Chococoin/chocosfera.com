@@ -19,9 +19,9 @@
 	<body>
 		<div class="container-flags">
 			<div style="display: block;" id="idiomas">
-				<a id="ven" class="idioma" href="../"><img src="./img/spain.png"></a>
-				<a id="fr" class="idioma" href="../frances/index_fr.php"><img src="./img/france.png"></a>
-				<a id="it" class="idioma" href="../italiano/index_it.php"><img src="./img/italy.png"></a>
+				<a id="us" class="idioma" href="./en/index_en.html"><img src="./img/usa.png"></a>
+				<a id="fr" class="idioma" href="./fr/index_fr.html"><img src="./img/france.png"></a>
+				<a id="it" class="idioma" href="./it/index_it.html"><img src="./img/italy.png"></a>
 			</div>
 		</div>
 		<div class="container-fluid wrapper">
@@ -111,9 +111,12 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script type="text/javascript">
-			$(".idiomaboton").click(function(){
-			  $('#idiomas').toggle(300);		
-			});	
+			$(document).ready(function() {
+				$(".idiomaboton").click(function(){
+				  $('#idiomas').toggle(300);		
+				});	
+			});
+			
 		</script>
 	</body>
 </html>
