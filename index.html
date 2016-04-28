@@ -1,220 +1,107 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Chocosfera</title>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script>
-		function variables(){
-			inicio = $('#inicio').css('height');
-			que = $('#que').css('height');
-			historia = $('#historia').css('height');
-			fabrica = $('#fabrica').css('height');
-			banco = $('#banco').css('height');
-			soporte = $('#soporte').css('height');
-			timeUp = 850;
-			timeDown = 300;
-		}
-/*		function slowAlert() {
-  			alert("That was really slow!");
-		}*/
-		var retardo = function(){
-			//alert(";)")
-			location.reload(false);
-		}
-		$(document).ready(function(){
-			variables()
-   			$("#inicio").click(function(){
-   				if(inicio === "54px" && que === "54px"){
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(inicio === "54px" && que === "10px"){
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#que").click(function(){
-   				if(que === "54px" && historia === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(que === "54px" && historia === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#historia").click(function(){
-   				if(historia === "54px" && fabrica === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(historia === "54px" && fabrica === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#fabrica").click(function(){
-   				if(fabrica === "54px" && banco === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(fabrica === "54px" && banco === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#banco").click(function(){
-   				if(banco === "54px" && soporte === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
-	   				variables()
-   				}
-   				if(banco === "54px" && soporte === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#soporte>p').show();
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-   			$("#soporte").click(function(){
-   				if(soporte === "54px" && banco === "54px"){
-	   				$('#inicio>p').hide();
-	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
-	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
-	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
-
-	   				variables()
-   				}
-   				if(soporte === "54px" && banco === "10px"){
-	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#inicio>p').show();
-	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
-	   				$('#banco>p').show();
-
-	   				variables()
-	   				setTimeout(retardo, timeDown*4);
-   				}
-   			});
-		});
-	</script>
-</head>
-<body>
-	<div class="container">
-		<div id="logo"></div>
-		<div id="inicio"><p>inicio</p></div>
-		<div id="que"><p>¿Qué es la chocosfera?</p></div>
-		<div id="historia"><p>Historia</p></div>
-		<div id="fabrica"><p>Choco Fábrica</p></div>
-		<div id="banco"><p>Banco</p></div>
-		<div id="soporte"><p>Soporte</p></div>
-	</div>	
-</body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Chocosfera</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./styles/style.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container-fluid wrapper">
+			<div class="container logo-centered">
+				<img class="logo" src="./img/logoc.png">
+			</div>
+			<div class="panel-group spoiler-container" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default spoiler-index">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title text-center">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseIndex" aria-expanded="false" aria-controls="collapseIndex">
+							INICIO
+						</a>
+						</h4>
+					</div>
+					<div id="collapseIndex" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body text-center">
+							<div class="col-xs-6 spoiler-index-user">
+								<p>USUARIO</p>
+							</div>
+							<div class="col-xs-6 spoiler-index-register">
+								<p>REGISTRO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default spoiler-history">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title text-center">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseHistory" aria-expanded="false" aria-controls="collapseHistory">
+							WEBTOON
+						</a>
+						</h4>
+					</div>
+					<div id="collapseHistory" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default spoiler-chocofactory">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title text-center">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFactory" aria-expanded="false" aria-controls="collapseFactory">
+							CHOCO FÁBRICA
+						</a>
+						</h4>
+					</div>
+					<div id="collapseFactory" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default spoiler-bank">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title text-center">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseBank" aria-expanded="false" aria-controls="collapseBank">
+							CHOCO BANCO
+						</a>
+						</h4>
+					</div>
+					<div id="collapseBank" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default spoiler-support">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title text-center">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSupport" aria-expanded="false" aria-controls="collapseSupport">
+							SOPORTE
+						</a>
+						</h4>
+					</div>
+					<div id="collapseSupport" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
 </html>

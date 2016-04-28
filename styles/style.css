@@ -1,100 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body{
 	background: #260B12;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
 }
-
-.container{ 
-  background-color: rgba(38,11,18,0.5); 
-  width:      100%;
-  height:     100%; 
-  z-index:    10;
-  top:        0; 
-  left:       0; 
-  position:   fixed; 
+.logo-centered {
+	padding: 40px;
 }
-
-#logo{
-	background-image: url("../img/logoc.png");
-	background-position: center;
-	background-size: 300px auto;
-	background-repeat: no-repeat;
-	margin: 0 auto;
-	padding-top: 50px;
-	margin-top: 0;
+.logo{
 	height: 300px;
 	width: 300px;
-	z-index: 11;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
-
-#inicio{
-	background-color: #F2B11E;
-	height: 54px;
-	line-height: 54px;
-	position: static;
-	margin: 0 auto;
-	position: static;
-	font-family: 'Montserrat', arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	color: #181A4B;
-	font-size: 30px;
+.wrapper {
+    padding-right: 0px;
+    padding-left: 0px;
 }
-
-#que{
-	background-color:#FB676A;
-	color: #171948;
-	height: 54px;
-	line-height: 54px;
-	position: static;
-	font-family: 'Montserrat', arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 30px;
+.spoiler-container{
+	margin-bottom: 0px;
 }
-
-#historia{
-	background-color:#2F004B;
-	color: #F4B100;
-	height: 54px;
-	line-height: 54px;
-	position: static;
-	font-family: 'Montserrat', arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 30px;
+.spoiler-container .panel {
+    border-radius: 0px;
+    border: 0px solid transparent;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.05);
+    box-shadow: 0 0 0 rgba(0,0,0,.05);
 }
-
-#fabrica{
-	background-color:#FDF31B ;
-	color: #3E004B;
-	height: 54px;
-	line-height: 54px;
-	position: static;
-	font-family: 'Montserrat', arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 30px;
+.spoiler-container .panel-default {
+    border: 0px solid transparent;
+    margin-bottom: -5px;
 }
-
-#banco{
-	background-color:#FA1653;
-	color: #FFF;
-	height: 54px;
-	line-height: 54px;
-	position: static;
-	font-family: 'Montserrat', arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 30px;
+.spoiler-container .panel-heading {
+    border-radius: 0px;
+    height: 50px;
+    padding: 15px 0px;
 }
-
-#soporte{
-	background-color: #0072BB;
-	color: #FF444B;
-	height: 54px;
-	line-height: 54px;
-	position: static;
-	font-family: 'Montserrat', arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 30px;
+.spoiler-container .panel-body {
+    padding: 0px;
+    border: 0px solid transparent;
+    border-top-color: transparent;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border: 0px solid transparent;
+}
+.spoiler-index .panel-heading {
+    background-color: #F2B11E;
+    color: #181A4B;
+}
+.spoiler-history .panel-heading {
+    background-color: #2F004B;
+    color: #F4B127;
+}
+.spoiler-chocofactory .panel-heading {
+    background-color: #F4D35F;
+    color: #3E004B;
+}
+.spoiler-bank .panel-heading {
+    background-color: #FA1653;
+    color: #3E004B;
+}
+.spoiler-support .panel-heading {
+    background-color: #0072BB;
+    color: #BE6580;
+}
+.spoiler-index-user {
+	background-color: #F5DF89;
+}
+.spoiler-index-user {
+    background-color: #F5DF89;
+    height: 100px;
+}
+.spoiler-index-register {
+    background-color: #F3D45F;
+    height: 100px;
+}
+.spoiler-index-user p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+}
+.spoiler-index-register p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
 }
