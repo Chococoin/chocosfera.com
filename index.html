@@ -10,26 +10,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script>
 		function variables(){
-			inicio = $('#inicio').css('height');
-			que = $('#que').css('height');
-			historia = $('#historia').css('height');
-			fabrica = $('#fabrica').css('height');
-			banco = $('#banco').css('height');
-			soporte = $('#soporte').css('height');
+			inicio = parseInt($('#inicio').css('height').replace(/[^-\d\.]/g, ''));
+			que = parseInt($('#que').css('height').replace(/[^-\d\.]/g, ''));
+			historia = parseInt($('#historia').css('height').replace(/[^-\d\.]/g, ''));
+			fabrica = parseInt($('#fabrica').css('height').replace(/[^-\d\.]/g, ''));
+			banco = parseInt($('#banco').css('height').replace(/[^-\d\.]/g, ''));
+			soporte = parseInt($('#soporte').css('height').replace(/[^-\d\.]/g, ''));
 			timeUp = 850;
 			timeDown = 300;
+			winInH = window.innerHeight;
+			winSpc = 0.85*(inicio*100/winInH);
+			winMin = 0.10*(inicio*100/winInH);
 		}
-		/*function slowAlert() {
-  			alert("That was really slow!");
-		}*/
+
 		var retardo = function(){
-			//alert(";)")
 			location.reload(false);
 		}
 		$(document).ready(function(){
-			//variables()
+			variables()
 			$("#inicio").click(function(){
-   				if(inicio === "54px" && que === "54px"){
+   				if(inicio > winSpc && que > winSpc){
 	   				$('#que>p').hide();
 	   				$('#que').animate({ height: '10'}, timeUp, 'swing');
 	   				$('#historia>p').hide();
@@ -41,7 +41,7 @@
 	   				$('#soporte>p').hide();
 	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
    				}
-   				if(inicio === "54px" && que === "10px"){
+   				if(inicio > winSpc && que > "10px"){
 	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#que>p').show();
 	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
@@ -56,7 +56,7 @@
    				}
    			});
    			$("#que").click(function(){
-   				if(que === "54px" && historia === "54px"){
+   				if(que > winSpc && historia > winSpc){
 	   				$('#inicio>p').hide();
 	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
 	   				$('#historia>p').hide();
@@ -68,7 +68,7 @@
 	   				$('#soporte>p').hide();
 	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
    				}
-   				if(que === "54px" && historia === "10px"){
+   				if(que > winSpc && historia === "10px"){
 	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#inicio>p').show();
 	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
@@ -83,7 +83,7 @@
    				}
    			});
    			$("#historia").click(function(){
-   				if(historia === "54px" && fabrica === "54px"){
+   				if(historia > winSpc && fabrica === "54px"){
 	   				$('#inicio>p').hide();
 	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
 	   				$('#que>p').hide();
@@ -95,7 +95,7 @@
 	   				$('#soporte>p').hide();
 	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
    				}
-   				if(historia === "54px" && fabrica === "10px"){
+   				if(historia > winSpc && fabrica === "10px"){
 	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#inicio>p').show();
 	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
@@ -110,7 +110,7 @@
    				}
    			});
    			$("#fabrica").click(function(){
-   				if(fabrica === "54px" && banco === "54px"){
+   				if(fabrica > winSpc && banco > winSpc){
 	   				$('#inicio>p').hide();
 	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
 	   				$('#que>p').hide();
@@ -122,7 +122,7 @@
 	   				$('#soporte>p').hide();
 	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
    				}
-   				if(fabrica === "54px" && banco === "10px"){
+   				if(fabrica > winSpc && banco === "10px"){
 	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#inicio>p').show();
 	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
@@ -137,7 +137,7 @@
    				}
    			});
    			$("#banco").click(function(){
-   				if(banco === "54px" && soporte === "54px"){
+   				if(banco > winSpc && soporte > winSpc){
 	   				$('#inicio>p').hide();
 	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
 	   				$('#que>p').hide();
@@ -149,7 +149,7 @@
 	   				$('#soporte>p').hide();
 	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
    				}
-   				if(banco === "54px" && soporte === "10px"){
+   				if(banco > winSpc && soporte > "10px"){
 	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#inicio>p').show();
 	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
@@ -164,7 +164,7 @@
    				}
    			});
    			$("#soporte").click(function(){
-   				if(soporte === "54px" && banco === "54px"){
+   				if(soporte > winSpc && banco > winSpc){
 	   				$('#inicio>p').hide();
 	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
 	   				$('#que>p').hide();
@@ -176,7 +176,7 @@
 	   				$('#banco>p').hide();
 	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
    				}
-   				if(soporte === "54px" && banco === "10px"){
+   				if(soporte > winSpc && banco > "10px"){
 	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#inicio>p').show();
 	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
@@ -190,7 +190,7 @@
 	   				setTimeout(retardo, timeDown*4);
    				}
    			});
-   			if( inicio === "54px"  && que === "54px"  && historia === "54px"  && fabrica === "54px"  && banco === "54px" && soporte === "54px"){
+   			if( inicio > winSpc  && que > winSpc  && historia > winSpc  && fabrica > winSpc  && banco > winSpc && soporte > winSpc ){
 				$('#inicio').hover( 
 					function(){ $(this).css('background-color','#E2A10E').css('height','58px'); }, 
 					function(){ $(this).css('background-color','#F2B11E').css('height','54px'); }

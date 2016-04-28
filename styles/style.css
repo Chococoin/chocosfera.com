@@ -14,6 +14,7 @@ body{
 
 #sub-container{
 	bottom: 0;
+	height: 100%;
 }
 
 #logo{
@@ -21,11 +22,11 @@ body{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 350px auto;
-	height: 300px;
+	height: 45%;
 	margin-top: 0;
 	margin: 0 auto;
 	padding-top: 50px;
-	width: 300px;
+	width: auto;
 	z-index: 11;
 }
 
@@ -34,9 +35,9 @@ body{
 	color: #181A4B;
 	cursor: default;
 	font-family: 'Montserrat', arial, sans-serif;
-	font-size: 30px;
-	height: 54px;
-	line-height: 54px;
+	font-size: 4.5vh;
+	height: 7.85%;
+	line-height: 7.8vh;
 	margin: 0 auto;
 	position: static;
 	text-align: center;
@@ -58,12 +59,13 @@ body{
 	background-color: #FFF465;
 	color: #2A2E84;
 	cursor: default;
-	display: inline-block;
+	/*display: inline-block;*/
+	display: none;
 	height: 90px;
 	width: 50%;
 	line-height: 90px;
 	font-family: 'Raleway', arial, sans-serif;
-	font-size: 45px;
+	font-size: 4.8vh;
 	position: static;
 	margin: 0 auto;
 	text-align: center;
@@ -81,10 +83,11 @@ body{
 	background-color: #FFDA4D;
 	color: #2A2E84;	
 	cursor: default;
-	display: inline-block;
+	/*display: inline-block;*/
+	display: none;
 	height: 90px;
 	width: 50%;
-	line-height: 90px;
+	line-height: 4.8vh;
 	font-family: 'Raleway', arial, sans-serif;
 	font-size: 45px;
 	position: static;
@@ -105,9 +108,9 @@ body{
 	color: #171948;
 	cursor: default;
 	font-family: 'Montserrat', arial, sans-serif;
-	font-size: 30px;
-	height: 54px;
-	line-height: 54px;
+	font-size: 4.5vh;
+	height: 7.85%;
+	line-height: 7.8vh;
 	position: static;
 	text-align: center;
 	text-transform: uppercase;
@@ -124,9 +127,9 @@ body{
 	color: #F4B100;
 	cursor: default;
 	font-family: 'Montserrat', arial, sans-serif;
-	font-size: 30px;
-	height: 54px;
-	line-height: 54px;
+	font-size: 4.5vh;
+	height: 7.85%;
+	line-height: 7.8vh;
 	position: static;
 	text-align: center;
 	text-transform: uppercase;
@@ -143,9 +146,9 @@ body{
 	color: #3E004B;
 	cursor: default;
 	font-family: 'Montserrat', arial, sans-serif;
-	font-size: 30px;
-	height: 54px;
-	line-height: 54px;
+	font-size: 4.5vh;
+	height: 7.85%;
+	line-height: 7.8vh;
 	position: static;
 	text-align: center;
 	text-transform: uppercase;
@@ -162,9 +165,9 @@ body{
 	color: #FFF;
 	cursor: default;
 	font-family: 'Montserrat', arial, sans-serif;
-	font-size: 30px;
-	height: 54px;
-	line-height: 54px;
+	font-size: 4.5vh;
+	height: 7.85%;
+	line-height: 7.8vh;
 	position: static;
 	text-align: center;
 	text-transform: uppercase;
@@ -181,9 +184,9 @@ body{
 	color: #FF444B;
 	cursor: default;
 	font-family: 'Montserrat', arial, sans-serif;
-	font-size: 30px;
-	height: 54px;
-	line-height: 54px;
+	font-size: 4.5vh;
+	height: 7.85%;
+	line-height: 7.8vh;
 	position: static;
 	text-align: center;
 	text-transform: uppercase;
