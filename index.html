@@ -8,128 +8,232 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script>
+		function variables(){
+			inicio = $('#inicio').css('height');
+			que = $('#que').css('height');
+			historia = $('#historia').css('height');
+			fabrica = $('#fabrica').css('height');
+			banco = $('#banco').css('height');
+			soporte = $('#soporte').css('height');
+			timeUp = 850;
+			timeDown = 300;
+		}
+/*		function slowAlert() {
+  			alert("That was really slow!");
+		}*/
+		var retardo = function(){
+			//alert(";)")
+			location.reload(false);
+		}
 		$(document).ready(function(){
-			var inicio = $('#inicio').css('height');
-	   		var que = $('#que').css('height');
-	   		var historia = $('#historia').css('height');
-	   		var fabrica = $('#fabrica').css('height');
-	   		var banco = $('#banco').css('height');
-	   		var soporte = $('#soporte').css('height');
-   			$("#inicio").click(function(){
+			variables()
+			/*if( inicio === "54px"  && que === "54px"  && historia === "54px"  && fabrica === "54px"  && banco === "54px" && soporte === "54px"){
+				$('#inicio').hover( 
+					function(){ $(this).css('background-color','#E2A10E').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#F2B11E').css('height','54px'); }
+				);
+				$('#que').hover( 
+					function(){ $(this).css('background-color','#EB575A').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#FB676A').css('height','54px'); }
+				);
+				$('#historia').hover( 
+					function(){ $(this).css('background-color','#1F003B').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#2F004B').css('height','54px'); }
+				);
+				$('#fabrica').hover( 
+					function(){ $(this).css('background-color','#EDE10B').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#FDF31B').css('height','54px'); }
+				);
+				$('#banco').hover( 
+					function(){ $(this).css('background-color','#EA0643').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#FA1653').css('height','54px'); }
+				);
+				$('#soporte').hover( 
+					function(){ $(this).css('background-color','#0062AB').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#0072BB').css('height','54px'); }
+				);
+			}*/
+			$("#inicio").click(function(){
    				if(inicio === "54px" && que === "54px"){
 	   				$('#que>p').hide();
-	   				$('#que').animate({ height: '10'}, 850, 'swing');
+	   				$('#que').animate({ height: '10'}, timeUp, 'swing');
 	   				$('#historia>p').hide();
-	   				$('#historia').animate({ height: '10px'}, 850, 'swing');
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
 	   				$('#fabrica>p').hide();
-	   				$('#fabrica').animate({ height: '10px'}, 850, 'swing');
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
 	   				$('#banco>p').hide();
-	   				$('#banco').animate({ height: '10px'}, 850, 'swing');
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
 	   				$('#soporte>p').hide();
-	   				$('#soporte').animate({ height: '10px'}, 850, 'swing');
-	   				inicio = $('#inicio').css('height');
-	   				que = $('#que').css('height');
-	   				historia = $('#historia').css('height');
-	   				fabrica = $('#fabrica').css('height');
-	   				banco = $('#banco').css('height');
-	   				soporte = $('#soporte').css('height');
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
    				}
    				if(inicio === "54px" && que === "10px"){
-	   				$('#que').animate({ height: '54px'}, 100, 'swing');
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#que>p').show();
-	   				$('#historia').animate({ height: '54px'}, 100, 'swing');
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#historia>p').show();
-	   				$('#fabrica').animate({ height: '54px'}, 100, 'swing');
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#fabrica>p').show();
-	   				$('#banco').animate({ height: '54px'}, 100, 'swing');
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#banco>p').show();
-	   				$('#soporte').animate({ height: '54px'}, 100, 'swing');
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
 	   				$('#soporte>p').show();
-	   				inicio = $('#inicio').css('height');
-	   				que = $('#que').css('height');
-	   				historia = $('#historia').css('height');
-	   				fabrica = $('#fabrica').css('height');
-	   				banco = $('#banco').css('height');
-	   				soporte = $('#soporte').css('height');
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
    				}
-
    			});
-		});
-		$(document).ready(function(){
    			$("#que").click(function(){
-   				$('#inicio>p').hide();
-   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#historia>p').hide();
-   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#fabrica>p').hide();
-   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#banco>p').hide();
-   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#soporte>p').hide();
-   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				if(que === "54px" && historia === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(que === "54px" && historia === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
    			});
-		});
-		$(document).ready(function(){
    			$("#historia").click(function(){
-   				$('#inicio>p').hide();
-   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#que>p').hide();
-   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#fabrica>p').hide();
-   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#banco>p').hide();
-   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#soporte>p').hide();
-   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				if(historia === "54px" && fabrica === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(historia === "54px" && fabrica === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
    			});
-		});
-		$(document).ready(function(){
    			$("#fabrica").click(function(){
-   				$('#inicio>p').hide();
-   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#que>p').hide();
-   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#historia>p').hide();
-   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#banco>p').hide();
-   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#soporte>p').hide();
-   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				if(fabrica === "54px" && banco === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(fabrica === "54px" && banco === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
    			});
-		});
-		$(document).ready(function(){
    			$("#banco").click(function(){
-   				$('#inicio>p').hide();
-   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#que>p').hide();
-   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#historia>p').hide();
-   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#fabrica>p').hide();
-   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#soporte>p').hide();
-   				$('#soporte').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				if(banco === "54px" && soporte === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(banco === "54px" && soporte === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
    			});
-		});
-		$(document).ready(function(){
    			$("#soporte").click(function(){
-   				$('#inicio>p').hide();
-   				$('#inicio').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#que>p').hide();
-   				$('#que').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#historia>p').hide();
-   				$('#historia').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#fabrica>p').hide();
-   				$('#fabrica').animate({ height: '10px', top: '35%' }, 850, 'swing');
-   				$('#banco>p').hide();
-   				$('#banco').animate({ height: '10px', top: '35%' }, 850, 'swing');
+   				if(soporte === "54px" && banco === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(soporte === "54px" && banco === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
    			});
 		});
 	</script>
 </head>
 <body>
 	<div class="container">
-		<div id="logo"></div>
+
+		<div id="logo"></div>		
 		<div id="inicio"><p>inicio</p></div>
 		<div id="que"><p>¿Qué es la chocosfera?</p></div>
 		<div id="historia"><p>Historia</p></div>
@@ -139,3 +243,4 @@
 	</div>	
 </body>
 </html>
+
