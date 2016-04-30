@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Chocosfera</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+		function variables(){
+			inicio = $('#inicio').css('height');
+			que = $('#que').css('height');
+			historia = $('#historia').css('height');
+			fabrica = $('#fabrica').css('height');
+			banco = $('#banco').css('height');
+			soporte = $('#soporte').css('height');
+			timeUp = 850;
+			timeDown = 300;
+		}
+
+		var usuario = function(){
+			alert(";)")
+			return $('#reg').css("display","block")
+		};
+
+		var retardo = function(){
+			//alert(";)")
+			location.reload(false);
+		};
+
+		$(document).ready(function(){
+			variables()
+			/*if( inicio === "54px"  && que === "54px"  && historia === "54px"  && fabrica === "54px"  && banco === "54px" && soporte === "54px"){
+				$('#inicio').hover( 
+					function(){ $(this).css('background-color','#E2A10E').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#F2B11E').css('height','54px'); }
+				);
+				$('#que').hover( 
+					function(){ $(this).css('background-color','#EB575A').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#FB676A').css('height','54px'); }
+				);
+				$('#historia').hover( 
+					function(){ $(this).css('background-color','#1F003B').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#2F004B').css('height','54px'); }
+				);
+				$('#fabrica').hover( 
+					function(){ $(this).css('background-color','#EDE10B').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#FDF31B').css('height','54px'); }
+				);
+				$('#banco').hover( 
+					function(){ $(this).css('background-color','#EA0643').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#FA1653').css('height','54px'); }
+				);
+				$('#soporte').hover( 
+					function(){ $(this).css('background-color','#0062AB').css('height','58px'); }, 
+					function(){ $(this).css('background-color','#0072BB').css('height','54px'); }
+				);
+			}*/
+			$("#inicio").click(function(){
+   				if(inicio === "54px" && que === "54px"){
+   					$('#reg').show();
+   					$('#reg').animate({ height: '120px'}, timeUp, 'swing')
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+
+	   				variables()
+   				}
+   				if(inicio === "54px" && que === "10px"){
+   					$('#reg').animate({ height: '0px'}, timeDown*2, 'swing');
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				/*$('#reg').hide();*/
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
+   			});
+   			$("#que").click(function(){
+   				if(que === "54px" && historia === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(que === "54px" && historia === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
+   			});
+   			$("#historia").click(function(){
+   				if(historia === "54px" && fabrica === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(historia === "54px" && fabrica === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
+   			});
+   			$("#fabrica").click(function(){
+   				if(fabrica === "54px" && banco === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(fabrica === "54px" && banco === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
+   			});
+   			$("#banco").click(function(){
+   				if(banco === "54px" && soporte === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#soporte>p').hide();
+	   				$('#soporte').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(banco === "54px" && soporte === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#soporte').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#soporte>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
+   			});
+   			$("#soporte").click(function(){
+   				if(soporte === "54px" && banco === "54px"){
+	   				$('#inicio>p').hide();
+	   				$('#inicio').animate({ height: '10'}, timeUp, 'swing');
+	   				$('#que>p').hide();
+	   				$('#que').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#historia>p').hide();
+	   				$('#historia').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#fabrica>p').hide();
+	   				$('#fabrica').animate({ height: '10px'}, timeUp, 'swing');
+	   				$('#banco>p').hide();
+	   				$('#banco').animate({ height: '10px'}, timeUp, 'swing');
+	   				variables()
+   				}
+   				if(soporte === "54px" && banco === "10px"){
+	   				$('#inicio').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#inicio>p').show();
+	   				$('#que').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#que>p').show();
+	   				$('#historia').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#historia>p').show();
+	   				$('#fabrica').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#fabrica>p').show();
+	   				$('#banco').animate({ height: '54px'}, timeDown, 'swing');
+	   				$('#banco>p').show();
+	   				variables()
+	   				setTimeout(retardo, timeDown*4);
+   				}
+   			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+
+		<div id="logo"></div>		
+		<div id="inicio"><p>inicio</p></div>
+		<div id="reg"><div id="usuario">usuario</div><div id="register">registro</div></div>
+		<div id="que"><p>¿Qué es la chocosfera?</p></div>
+		<div id="historia"><p>webtoon</p></div>
+		<div id="fabrica"><p>Choco Fábrica</p></div>
+		<div id="banco"><p>Banco</p></div>
+		<div id="soporte"><p>Soporte</p></div>
+	</div>	
+</body>
+</html>
+
