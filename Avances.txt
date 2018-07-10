@@ -1,0 +1,4 @@
+https://mobirise.com/bootstrap-4-theme/corporate-template/
+Germán estuve revisando esta plantilla y me parece muy buena para esa parte de inicio de la Chocosfera, no sé
+sí se pueda colocar una barra flotante de navegación para las diferentes secciones que se agreguen. Andy me dice que puede
+ayudar en esa parte de la distribución de la interfaz, pero necesito que confirmes sí está bien comenzar por aquí.
