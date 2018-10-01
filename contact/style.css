@@ -1,0 +1,50 @@
+font-family: 'Roboto', sans-serif;
+
+body {
+  background: #D9B280;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: #FFFFFF;
+  height: 650px;
+  margin: 5% auto;
+}
+
+.container .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 5% 8%;
+}
+.container .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 4% 5% 8%;
+}
+.container .contact-form input,
+.container .contact-form textarea {
+  margin-top: 3%;
+  color: #242424;
+  border: 1px solid #B7B7B7;
+}
+.container .contact-form input::placeholder,
+.container .contact-form textarea::placeholder {
+  color: #242424;
+}
+.btn-send {
+  width: 180px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  border: none;
+  margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+.form-mrg {
+  margin: 0 4% 5% 8%;
+}
